@@ -9,19 +9,19 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import java.net.Proxy
 import java.util.concurrent.TimeUnit
 
-const val API_LOGIN = "/Login"
-const val API_CHECK_NUM = "/CheckNo"
-const val API_REG = "/Register"
-const val API_CHECK_USER = "/UserCheck"
-const val API_USER_LIST = "/UserList"
-const val API_CHECK_NUM_LIST = "/CheckNoList"
+const val API_LOGIN = "/api/Login"
+const val API_CHECK_NUM = "/api/CheckNo"
+const val API_REG = "/api/Register"
+const val API_CHECK_USER = "/api/UserCheck"
+const val API_USER_LIST = "/api/UserList"
+const val API_CHECK_NUM_LIST = "/api/CheckNoList"
 
 val service by lazy { NetworkBase.creatService(NetworkService::class.java) }
 
 object NetworkBase {
 
 //    private const val baseUrl = "http://1.2.3.187:5000/api/"
-    private const val baseUrl = "http://10.0.2.2:5000/api/"
+    private const val baseUrl = "http://10.0.2.2:5000/"
 //    private const val baseUrl = "http://127.0.0.1:5000/api/"
     private val networkServiceMap = hashMapOf<String, Any>()
 
