@@ -10,7 +10,7 @@ interface NetworkService {
     suspend fun login(@Body jsonLogin: JsonLogin): Response<Resp>
 
     @GET(API_CHECK_NUM)
-    suspend fun checkNum(@Path("mobile") checkNum: String): Response<Resp>
+    suspend fun checkNum(@Query("mobile") checkNum: String): Response<Resp>
 
     @POST(API_REG)
     suspend fun regist(@Body regist: JsonRegist): Response<Resp>

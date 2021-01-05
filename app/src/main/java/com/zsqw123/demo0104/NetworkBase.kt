@@ -10,7 +10,7 @@ import java.net.Proxy
 import java.util.concurrent.TimeUnit
 
 const val API_LOGIN = "/Login"
-const val API_CHECK_NUM = "/CheckNo/"
+const val API_CHECK_NUM = "/CheckNo"
 const val API_REG = "/Register"
 const val API_CHECK_USER = "/UserCheck"
 const val API_USER_LIST = "/UserList"
